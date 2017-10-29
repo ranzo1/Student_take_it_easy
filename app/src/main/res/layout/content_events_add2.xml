@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_events_add2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ranzo1.student_app.add_and_update.Events_add2"
+    tools:showIn="@layout/activity_events_add2"
+    android:background="@drawable/ic_bacgroundstudent">
+
+    <RelativeLayout
+        android:id="@+id/layoutEvent"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#46838383"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardBackgroundColor="#f9f9f9"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="8dp"
+        android:id="@+id/cardEvent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:ems="10"
+
+                android:id="@+id/editEvent"
+               android:maxLines="7"
+                app:met_floatingLabel="normal"
+                app:met_iconLeft="@mipmap/ic_about"
+                app:met_primaryColor="#000"
+                app:met_iconPadding="3dp"
+                android:hint="About"
+                android:layout_below="@+id/editStart1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/editStart1"
+                android:layout_alignEnd="@+id/editStart1" />
+
+            <RelativeLayout
+                android:layout_width="320dp"
+
+                android:layout_height="wrap_content"
+
+                android:id="@+id/Layout"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="31dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerType"
+                    android:entries="@array/type"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:ems="10"
+                app:met_floatingLabel="normal"
+                app:met_iconLeft="@mipmap/ic_clock"
+                app:met_iconPadding="3dp"
+                android:hint="Start"
+                android:id="@+id/editStart1"
+                android:layout_below="@+id/Layout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/Layout2"
+                android:layout_alignEnd="@+id/Layout2" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/Layout2"
+                android:layout_below="@+id/Layout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/Layout"
+                android:layout_alignEnd="@+id/Layout">
+
+                <Spinner
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerPredmeti"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:text="Not subject oriented"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_below="@+id/editEvent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/colorBtn"
+                app:backgroundTint="#d4d4d4"
+                android:visibility="invisible"
+                android:layout_above="@+id/editStart1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+
+            android:textSize="17sp"
+            />
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="#89ba97"
+        android:src="@mipmap/ic_pencil_floating_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/sendEmail" android:title="Send email" android:icon="@mipmap/ic_emailsrc"/>
+    <item android:id="@+id/pickImage" android:title="Pick image" android:icon="@mipmap/ic_pickimage"/>
+
+
+</menu>

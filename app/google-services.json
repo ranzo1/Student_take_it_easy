@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "760444744340",
+    "project_id": "studentapp-153915"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760444744340:android:a0b98ef4bd802b46",
+        "android_client_info": {
+          "package_name": "com.example.ranzo1.student_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760444744340-h0ucj7f5c78iofq9nhvbb71atagc3o8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ranzo1.student_app",
+            "certificate_hash": "8D6E2315B3E59CC3F7E023513E6A60650E7051FC"
+          }
+        },
+        {
+          "client_id": "760444744340-26jf1on27oo11d9oj0makfabo3eeu57d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3Hed8HvQXjXAw_D_6VMO9bZ3xg4Lo-cs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

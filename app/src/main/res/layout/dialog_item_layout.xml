@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="295dp"
+    android:layout_height="match_parent"
+
+
+
+    >
+
+    <Button
+        android:visibility="invisible"
+        android:text="Button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button12"
+        android:layout_below="@+id/relativeLayout10"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/typeItem"
+        android:hint="Type item"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout10"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/typeItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp">
+
+        <Button
+            android:text="dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button15"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button13"
+            android:layout_toEndOf="@+id/button13" />
+
+        <Button
+            android:text="Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button13"
+
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnNext"
+            android:layout_toEndOf="@+id/btnNext" />
+
+        <Button
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNext"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

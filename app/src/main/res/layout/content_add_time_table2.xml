@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_time_table2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ranzo1.student_app.add_and_update.AddTimeTable2"
+    tools:showIn="@layout/activity_add_time_table2"
+    android:background="@drawable/ic_bacgroundstudent">
+
+    <RelativeLayout
+        android:id="@+id/relatLay"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#46838383"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardBackgroundColor="#f9f9f9"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="8dp"
+        android:id="@+id/cardViewtimeTable"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="A"
+            android:textSize="17sp"
+            android:background="@color/colorPrimary"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/sad"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                app:met_primaryColor="#000"
+                android:hint="Additional"
+                android:inputType="text"
+                android:singleLine="true"
+                app:met_floatingLabel="normal"
+                app:met_iconLeft="@mipmap/ic_about"
+                app:met_iconPadding="3dp"
+                android:layout_below="@+id/end"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/end"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="End"
+                android:inputType="time"
+                app:met_floatingLabel="normal"
+                app:met_iconLeft="@mipmap/ic_clock"
+                app:met_iconPadding="3dp"
+                android:layout_below="@+id/start"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/sad"
+                android:layout_alignEnd="@+id/sad" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/start"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Start"
+                android:inputType="time"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                app:met_floatingLabel="normal"
+                app:met_iconLeft="@mipmap/ic_clock"
+                app:met_iconPadding="3dp"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/end"
+                android:layout_alignEnd="@+id/end" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+                    android:id="@+id/spiner_dani"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:entries="@array/days"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Spinner
+
+                    android:id="@+id/spiner_predmeti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.design.widget.FloatingActionButton
+
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="#89ba97"
+        android:src="@mipmap/ic_pencil_floating_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

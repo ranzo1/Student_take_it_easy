@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Take a picture" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Import picture" />
+        <item
+            android:id="@+id/nav_microphone"
+            android:icon="@drawable/ic_microphone"
+            android:title="Record" />
+        <item
+            android:id="@+id/nav_pdf"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Import document" />
+        <item
+            android:id="@+id/writePdf"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Write document" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

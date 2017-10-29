@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_subject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bacgroundstudent"
+    tools:context="com.example.ranzo1.student_app.add_and_update.AddSubjectActivity">
+
+
+   <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayouttttttt"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#46838383"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp">
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:paddingBottom="7dp"
+            android:background="@drawable/ic_pencilst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorPrimary"
+            app:rippleColor="#89ba97"
+            android:src="@mipmap/ic_pencil_floating_btn"
+            android:id="@+id/idDone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_below="@+id/cardViewAssistent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/textViewInvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idDone"
+
+            />
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            card_view:cardBackgroundColor="#f9f9f9"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="8dp"
+            android:id="@+id/cardViewtimeTable"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+
+                    android:id="@+id/idTxtSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary"
+                    android:text="SUBJECT"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/colorPicker2"
+                    android:layout_width="60dp"
+                    app:backgroundTint="#d4d4d4"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/idShortName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    app:met_primaryColor="#000"
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_subject"
+                    app:met_iconPadding="3dp"
+                    android:layout_marginBottom="12dp"
+                    android:ems="10"
+                    android:maxLength="7"
+                    android:hint="Short name"
+                    android:inputType="none"
+                    app:met_maxCharacters="7"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/ideditSubjectName"
+                    android:layout_alignStart="@+id/ideditSubjectName" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+
+                    android:id="@+id/ideditSubjectName"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="bottom"
+                    app:met_primaryColor="#000"
+                    android:hint="Name"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_subject"
+                    app:met_iconPadding="3dp"
+                    android:layout_above="@+id/idShortName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            card_view:cardBackgroundColor="#f9f9f9"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="8dp"
+            android:id="@+id/cardViewProfessor"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/cardViewtimeTable"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/fresco_view"
+                    android:layout_width="130dp"
+                    fresco:roundAsCircle="false"
+                    android:layout_height="130dp"
+                    fresco:placeholderImage="@drawable/man"
+                    fresco:roundedCornerRadius="100dp"
+                    fresco:roundWithOverlayColor="@color/colorPrimary"
+                    fresco:roundingBorderWidth="5dp"
+                    fresco:roundingBorderColor="@color/colorPrimary"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+
+                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:id="@+id/idTxtProfessor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentTop="true"
+                    android:text="PROFESSOR"
+                    android:textAlignment="center" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/idEmailProfessor"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/idNameProffesor"
+                    android:layout_alignStart="@+id/idNameProffesor"
+                    android:layout_centerVertical="true"
+                    android:hint="Email"
+                    app:met_primaryColor="#000"
+                    app:met_floatingLabel="normal"
+                    android:ems="10"
+                    app:met_iconLeft="@mipmap/ic_emailsrc"
+                    app:met_iconPadding="3dp"
+
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/profCabinet"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/idEmailProfessor"
+                    android:layout_alignStart="@+id/idEmailProfessor"
+                    android:layout_below="@+id/idEmailProfessor"
+                    android:ems="10"
+                    android:hint="Cabinet"
+                    app:met_primaryColor="#000"
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_cabinet"
+                    app:met_iconPadding="3dp"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/idNameProffesor"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:ems="10"
+                    android:hint="Name"
+                    app:met_primaryColor="#000"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_person"
+                    app:met_iconPadding="3dp"
+                    android:layout_above="@+id/idEmailProfessor"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            card_view:cardBackgroundColor="#f9f9f9"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="8dp"
+            android:id="@+id/cardViewAssistent"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/cardViewProfessor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/fresco_view2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    fresco:placeholderImage="@drawable/man"
+                    fresco:roundedCornerRadius="100dp"
+                    fresco:roundWithOverlayColor="@color/colorPrimary"
+                    fresco:roundingBorderWidth="5dp"
+                    fresco:roundingBorderColor="@color/colorPrimary"
+
+                    android:layout_marginRight="13dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+
+                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:id="@+id/idTxtAssistent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASSISTENT"
+                    android:textAlignment="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/asistCabinet"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/idEmailAssistent"
+                    android:layout_alignStart="@+id/idEmailAssistent"
+                    android:layout_below="@+id/idEmailAssistent"
+                    android:ems="10"
+                    app:met_primaryColor="#000"
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_cabinet"
+                    app:met_iconPadding="3dp"
+                    android:hint="Cabinet"
+                    android:inputType="none"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+
+                    android:id="@+id/idNameAssistent"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Name"
+                    app:met_primaryColor="#000"
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_person"
+                    app:met_iconPadding="3dp"
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_above="@+id/idEmailAssistent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+
+
+                    android:id="@+id/idEmailAssistent"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_emailsrc"
+                    app:met_iconPadding="3dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    app:met_primaryColor="#000"
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/idNameAssistent"
+                    android:layout_alignStart="@+id/idNameAssistent" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

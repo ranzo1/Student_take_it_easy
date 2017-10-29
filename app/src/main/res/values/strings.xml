@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Student,take it easy</string>
+
+
+    <string name="google_app_id">760444744340-26jf1on27oo11d9oj0makfabo3eeu57d.apps.googleusercontent.com</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_subject">Subjects</string>
+    <string name="title_activity_timetable">Timetable</string>
+    <string name="title_activity_notes">Notes</string>
+    <string name="title_activity_email">Email</string>
+    <string name="title_activity_files">Files</string>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+
+    </string-array>
+
+    <string-array name="type">
+        <item>Exam</item>
+        <item>Final exam</item>
+        <item>Project</item>
+        <item>Other</item>
+
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_time_table">AddTimeTable</string>
+    <string name="title_activity_add_time_table2">addTimeTable2</string>
+    <string name="title_activity_events_add2">Events_add2</string>
+    <string name="appwidget_text">Student Calendar</string>
+    <string name="add_widget">Add widget</string>
+
+
+</resources>

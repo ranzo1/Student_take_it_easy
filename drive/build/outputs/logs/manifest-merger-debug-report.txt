@@ -1,0 +1,189 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:17:1-76:12
+	package
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:18:5-55
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:20:5-30
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:19:5-28
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:17:11-69
+uses-sdk
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.1] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:24:9-38
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:23:9-35
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+		INJECTED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml
+application
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:26:5-74:19
+MERGED from [com.android.support:appcompat-v7:23.0.1] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.1] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:29:9-41
+	android:allowBackup
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:27:9-35
+	android:icon
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:28:9-45
+	android:theme
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:30:9-40
+meta-data#com.google.android.gms.version
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:31:9-33:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] F:\Studentapp\MyApplication\drive\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:33:13-66
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:32:13-58
+activity#com.google.android.gms.drive.sample.demo.HomeActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:35:9-43:20
+	android:label
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:37:13-45
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:36:13-81
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:38:13-42:29
+action#android.intent.action.MAIN
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:39:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:41:27-74
+activity#com.google.android.gms.drive.sample.demo.ListFilesActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:44:9-55
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:44:19-52
+activity#com.google.android.gms.drive.sample.demo.QueryFilesActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:45:9-56
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:45:19-53
+activity#com.google.android.gms.drive.sample.demo.SyncRequestsActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:46:9-58
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:46:19-55
+activity#com.google.android.gms.drive.sample.demo.RetrieveContentsActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:47:9-62
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:47:19-59
+activity#com.google.android.gms.drive.sample.demo.RetrieveContentsWithProgressDialogActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:48:9-80
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:48:19-77
+activity#com.google.android.gms.drive.sample.demo.CreateFileActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:49:9-56
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:49:19-53
+activity#com.google.android.gms.drive.sample.demo.CreateEmptyFileActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:50:9-61
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:50:19-58
+activity#com.google.android.gms.drive.sample.demo.CreateFileInAppFolderActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:51:9-67
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:51:19-64
+activity#com.google.android.gms.drive.sample.demo.CreateFolderActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:52:9-58
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:52:19-55
+activity#com.google.android.gms.drive.sample.demo.EditContentsActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:53:9-58
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:53:19-55
+activity#com.google.android.gms.drive.sample.demo.EditMetadataActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:54:9-58
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:54:19-55
+activity#com.google.android.gms.drive.sample.demo.CreateFileWithCreatorActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:55:9-67
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:55:19-64
+activity#com.google.android.gms.drive.sample.demo.PickFileWithOpenerActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:56:9-64
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:56:19-61
+activity#com.google.android.gms.drive.sample.demo.PickFolderWithOpenerActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:57:9-66
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:57:19-63
+activity#com.google.android.gms.drive.sample.demo.RetrieveMetadataActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:58:9-62
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:58:19-59
+activity#com.google.android.gms.drive.sample.demo.CreateFileInFolderActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:59:9-64
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:59:19-61
+activity#com.google.android.gms.drive.sample.demo.CreateFolderInFolderActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:60:9-66
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:60:19-63
+activity#com.google.android.gms.drive.sample.demo.ListFilesInFolderActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:61:9-63
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:61:19-60
+activity#com.google.android.gms.drive.sample.demo.QueryFilesInFolderActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:62:9-64
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:62:19-61
+activity#com.google.android.gms.drive.sample.demo.PinFileActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:63:9-53
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:63:19-50
+activity#com.google.android.gms.drive.sample.demo.events.ListenChangeEventsForFilesActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:64:9-79
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:64:19-76
+activity#com.google.android.gms.drive.sample.demo.QueryNonTextFilesActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:65:9-63
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:65:19-60
+activity#com.google.android.gms.drive.sample.demo.QueryFilesSharedWithMeActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:66:9-68
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:66:19-65
+activity#com.google.android.gms.drive.sample.demo.QueryFilesWithAInTitleActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:67:9-68
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:67:19-65
+activity#com.google.android.gms.drive.sample.demo.QueryStarredTextFilesActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:68:9-67
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:68:19-64
+activity#com.google.android.gms.drive.sample.demo.QueryTextOrHtmlFilesActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:69:9-66
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:69:19-63
+activity#com.google.android.gms.drive.sample.demo.InsertUpdateCustomPropertyActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:70:9-72
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:70:19-69
+activity#com.google.android.gms.drive.sample.demo.QueryFilesWithCustomPropertyActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:71:9-74
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:71:19-71
+activity#com.google.android.gms.drive.sample.demo.DeleteCustomPropertyActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:72:9-66
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:72:19-63
+activity#com.google.android.gms.drive.sample.demo.QuerySortedFilesActivity
+ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:73:9-62
+	android:name
+		ADDED from F:\Studentapp\MyApplication\drive\src\main\AndroidManifest.xml:73:19-59

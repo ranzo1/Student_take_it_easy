@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_events"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bacgroundstudent"
+    tools:context="com.example.ranzo1.student_app.mainActivities.EventsActivity"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#46838383"
+        >
+
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="match_parent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            app:compactCalendarTextSize="12sp"
+            app:compactCalendarBackgroundColor="@color/colorPrimaryDark"
+            app:compactCalendarTextColor="#fff"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorPrimary"
+            app:compactCalendarCurrentDayBackgroundColor="#ed749197"
+            app:compactCalendarMultiEventIndicatorColor="#fff"
+            android:paddingBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="220dp" />
+
+
+
+
+        <RadioGroup
+
+            android:textColor="#f1eeee"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+           android:paddingTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+            android:layout_marginBottom="2dp"
+
+            android:layout_below="@+id/compactcalendar_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:textColor="#f1eeee"
+                android:buttonTint="#f1eeee"
+                android:text="Today"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/today"
+                android:layout_weight="1"
+                android:checked="false"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                />
+
+            <RadioButton
+                android:textColor="#f1eeee"
+                android:buttonTint="#f1eeee"
+                android:text="Month"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/month"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:textColor="#f1eeee"
+                android:buttonTint="#f1eeee"
+                android:text="All events"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/all_events"
+                android:layout_weight="1"
+                />
+        </RadioGroup>
+
+        <!-- <com.airbnb.lottie.LottieAnimationView
+             android:id="@+id/animation_view"
+             android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:layout_gravity="center"
+             app:lottie_fileName="pencil_write.json"
+             app:lottie_loop="true" />
+             -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/ic_circle"
+            android:gravity="bottom"
+            android:layout_marginTop="60dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/radioGroup"
+            >
+
+
+
+            <RelativeLayout
+
+                android:background="@drawable/ic_calendar_empty"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+
+                android:id="@+id/relativeLayout6"
+                >
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="14sp"
+                android:id="@+id/textView3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#2a4531"
+                android:layout_centerHorizontal="true"
+                android:text="No events for this date!"
+                android:layout_below="@+id/relativeLayout6"
+                />
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#2a4531"
+
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add some..."
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listaDog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioGroup" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

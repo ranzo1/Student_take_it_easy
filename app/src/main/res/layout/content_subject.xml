@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_subject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/ic_bacgroundstudent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ranzo1.student_app.mainActivities.SubjectActivity"
+    tools:showIn="@layout/app_bar_subject">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#46838383"
+
+       >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/ic_circle"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="111dp">
+
+            <RelativeLayout
+
+                android:background="@drawable/ic_book_empty"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+
+
+                android:id="@+id/relativeLayout6"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/textView3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#2a4531"
+                android:text="Insert your subjects!"
+                android:layout_below="@+id/relativeLayout6"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#2a4531"
+
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With all important information..."
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ListViewSubjects"
+            style="@style/Widget.AppCompat.Light.ListView.DropDown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.design.widget.FloatingActionButton
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="11dp"
+            app:backgroundTint="@color/colorPrimary"
+            app:rippleColor="#89ba97"
+            android:src="@mipmap/ic_pencil_floating_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

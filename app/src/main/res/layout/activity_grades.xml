@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grades"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bacgroundstudent"
+
+    tools:context="com.example.ranzo1.student_app.mainActivities.GradesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#46838383"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+
+
+        <ListView
+
+            android:id="@+id/listViewGrades"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:layout_below="@+id/textView15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:text="Average grade"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:id="@+id/textView14"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="0.0"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/textView15"
+            android:layout_below="@+id/textView14"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

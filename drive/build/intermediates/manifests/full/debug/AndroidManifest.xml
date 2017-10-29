@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 Google, Inc
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.gms.drive.sample.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.drive.sample.demo.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.android.gms.drive.sample.demo.ListFilesActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QueryFilesActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.SyncRequestsActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.RetrieveContentsActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.RetrieveContentsWithProgressDialogActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.CreateFileActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.CreateEmptyFileActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.CreateFileInAppFolderActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.CreateFolderActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.EditContentsActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.EditMetadataActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.CreateFileWithCreatorActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.PickFileWithOpenerActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.PickFolderWithOpenerActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.RetrieveMetadataActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.CreateFileInFolderActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.CreateFolderInFolderActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.ListFilesInFolderActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QueryFilesInFolderActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.PinFileActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.events.ListenChangeEventsForFilesActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QueryNonTextFilesActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QueryFilesSharedWithMeActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QueryFilesWithAInTitleActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QueryStarredTextFilesActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QueryTextOrHtmlFilesActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.InsertUpdateCustomPropertyActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QueryFilesWithCustomPropertyActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.DeleteCustomPropertyActivity" />
+        <activity android:name="com.google.android.gms.drive.sample.demo.QuerySortedFilesActivity" />
+    </application>
+
+</manifest>

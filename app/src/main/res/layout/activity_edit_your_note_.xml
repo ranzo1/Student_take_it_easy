@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_your_note_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.ranzo1.student_app.add_and_update.EditYourNote_Activity"
+    android:windowSoftInputMode="adjustNothing"
+    android:background="@drawable/ic_bacgroundstudent"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#46838383"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="8dp"
+            android:id="@+id/cardViewEditNote"
+            android:layout_above="@+id/button9">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/relativeLayout3"
+                    android:layout_below="@+id/naslov_beleske"
+                    >
+
+
+
+                    <Button
+                        android:background="@drawable/ic_eraser"
+                        android:layout_width="35dp"
+                        android:id="@+id/button14"
+                        android:layout_height="35dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="Delete items"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtDeleteItems"
+                        android:layout_alignBottom="@+id/button14"
+                        android:layout_toRightOf="@+id/button14"
+                        android:layout_toEndOf="@+id/button14" />
+
+                    <ListView
+
+
+                        android:visibility="invisible"
+                        android:id="@+id/toDoListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/naslov_beleske">
+
+                </RelativeLayout>
+
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:layout_marginBottom="3dp"
+                    android:id="@+id/text_beleske"
+                    android:hint="Write..."
+                    android:selectAllOnFocus="false"
+                    android:backgroundTint="#00000000"
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_about"
+                    app:met_hideUnderline="true"
+                    app:met_iconPadding="3dp"
+                    app:met_primaryColor="#000"
+
+
+                    android:layout_alignLeft="@+id/relativeLayout16"
+                    android:layout_alignStart="@+id/relativeLayout16"
+                    android:layout_below="@+id/naslov_beleske" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:ems="10"
+                    android:id="@+id/naslov_beleske"
+                    android:hint="Title"
+                    android:singleLine="true"
+
+                    app:met_floatingLabel="normal"
+                    app:met_iconLeft="@mipmap/ic_subject"
+                    app:met_iconPadding="3dp"
+                    app:met_primaryColor="#000"
+
+                    android:layout_below="@+id/checkBox3"
+                    android:layout_alignLeft="@+id/text_beleske"
+                    android:layout_alignStart="@+id/text_beleske" />
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout16"
+
+
+
+                    android:layout_marginTop="11dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <Spinner
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner_Naziv"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Read only"
+                    android:layout_below="@+id/checkBox2"
+                    android:layout_alignLeft="@+id/naslov_beleske"
+                    android:layout_alignStart="@+id/naslov_beleske"
+                    android:layout_alignRight="@+id/checkBox2"
+                    android:layout_alignEnd="@+id/checkBox2" />
+
+                <android.support.design.widget.FloatingActionButton
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:backgroundTint="#d4d4d4"
+                    android:id="@+id/colorpickerbtn"
+                    android:layout_below="@+id/relativeLayout16"
+                    android:layout_alignRight="@+id/relativeLayout16"
+                    android:layout_alignEnd="@+id/relativeLayout16"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginEnd="11dp" />
+
+
+                <CheckBox
+                    android:text="Not subject oriented"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBox2"
+
+                    android:layout_alignBaseline="@+id/colorpickerbtn"
+                    android:layout_alignBottom="@+id/colorpickerbtn"
+                    android:layout_alignLeft="@+id/naslov_beleske"
+                    android:layout_alignStart="@+id/naslov_beleske" />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:text="Add items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_alignBaseline="@+id/text_beleske"
+                    android:layout_alignBottom="@+id/text_beleske"
+                    android:layout_alignLeft="@+id/text_beleske"
+                    android:layout_alignStart="@+id/text_beleske" />
+
+                <Button
+
+
+                    android:background="@drawable/ic_writer"
+                    android:layout_height="35dp"
+                    android:id="@+id/button11"
+                    android:layout_width="35dp"
+                    android:layout_alignBaseline="@+id/relativeLayout3"
+                    android:layout_alignBottom="@+id/relativeLayout3"
+                    android:layout_alignLeft="@+id/text_beleske"
+                    android:layout_alignStart="@+id/text_beleske" />
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+
+            android:id="@+id/button9"
+            app:fabSize="mini"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_pencil_floating_btn"
+            app:backgroundTint="@color/colorPrimary"
+            app:rippleColor="#89ba97"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/cardViewEditNote"
+            android:layout_alignEnd="@+id/cardViewEditNote" />
+
+
+        <android.support.design.widget.FloatingActionButton
+
+            android:id="@+id/button10"
+            android:visibility="invisible"
+            app:fabSize="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_share"
+            app:backgroundTint="@color/colorPrimary"
+            app:rippleColor="#89ba97"
+            android:layout_alignTop="@+id/button9"
+            android:layout_toLeftOf="@+id/button9"
+            android:layout_toStartOf="@+id/button9"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="13dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

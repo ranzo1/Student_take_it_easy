@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/activity_about"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+
+   >
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="5dp"
+        card_view:cardBackgroundColor="#f9f9f9"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="7dp"
+        android:id="@+id/cardViewtimeTable"
+       android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="133dp"
+                android:layout_height="match_parent"
+                android:id="@+id/relativeLayout4">
+
+
+
+                <TextView
+
+                    android:text="Protic Zoran"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textZoran"
+                    android:layout_below="@+id/circularImageViewJa"
+                    android:layout_centerHorizontal="true" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/circularImageViewJa"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/ja"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#020202"
+                    app:civ_shadow_radius="10"
+                    android:layout_marginTop="14dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Student,take it easy"
+                android:layout_below="@+id/bookmark1"
+                android:layout_toRightOf="@+id/relativeLayout4"
+                android:layout_toEndOf="@+id/relativeLayout4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/linearLayout2"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/relativeLayout4"
+                android:layout_toEndOf="@+id/relativeLayout4">
+
+                <Button
+                    android:id="@+id/gmailBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+
+                    android:background="@drawable/ic_email" />
+
+                <Button
+                    android:id="@+id/facebookBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_facebook_logo_button"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/instagBtnBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="@drawable/ic_instagram_logo" />
+
+
+            </LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/bookmark1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_alignParentEnd="true"
+
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/ic_bookmark">
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

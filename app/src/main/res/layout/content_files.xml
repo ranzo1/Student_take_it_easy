@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_files"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/ic_bacgroundstudent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ranzo1.student_app.mainActivities.FilesActivity"
+    tools:showIn="@layout/activity_files">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#46838383"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/ic_circle"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="111dp">
+
+            <RelativeLayout
+
+                android:background="@drawable/ic_file_empty"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+
+
+                android:id="@+id/relativeLayout6"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/textView3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#2a4531"
+                android:text="Upload your files to drive!"
+                android:layout_below="@+id/relativeLayout6"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#2a4531"
+
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Images,documents,audio files,folders etc..."
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bmb_normalColor="@color/colorPrimary"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_piecePlaceEnum="piecePlace_dot_6_3"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_6_3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</RelativeLayout>
